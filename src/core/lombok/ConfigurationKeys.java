@@ -566,7 +566,16 @@ public class ConfigurationKeys {
 	 * basic = {@code uShape} becomes {@code getUShape}, beanspec = {@code uShape} becomes {@code getuShape} (default = basic).
 	 */
 	public static final ConfigurationKey<CapitalizationStrategy> ACCESSORS_JAVA_BEANS_SPEC_CAPITALIZATION = new ConfigurationKey<CapitalizationStrategy>("lombok.accessors.capitalization", "Which capitalization strategy to use when converting field names to accessor names and vice versa (default: basic).") {};
+		
+	// ----- Cached -----
 	
+	/**
+	 * lombok configuration: {@code lombok.cached.flagUsage} = {@code WARNING} | {@code ERROR}.
+	 * 
+	 * If set, <em>any</em> usage of {@code @Cached} results in a warning / error.
+	 */
+	public static final ConfigurationKey<FlagUsageType> CACHED_FLAG_USAGE = new ConfigurationKey<FlagUsageType>("lombok.cached.flagUsage", "Emit a warning or error if @Cached is used.") {};
+
 	
 	// ----- ExtensionMethod -----
 	
